@@ -97,10 +97,7 @@ h3 {
   text-align: justify;
   margin-bottom: 2%;
 }
-.mynem{
-  -webkit-text-stroke: red;
-  -webkit-text-stroke-color: blue;
-}
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
