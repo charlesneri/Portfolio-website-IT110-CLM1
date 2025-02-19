@@ -23,7 +23,7 @@
 :root {
   --background-color: #2f2b2b; /* Background color for the entire website, including individual sections */
   --default-color: #ddd2d2; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ddd2d2; /* Color for headings, subheadings and title throughout the website */
+  --heading-color: #d9d2dd; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #987b62; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -93,7 +93,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
+  color: var(--contrast-color);
   font-family: var(--heading-font);
 }
 h3 {
@@ -246,7 +246,7 @@ h3 {
   .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--background-color);/*font color*/
+    color: var(--background-color); /*font color*/
   }
 
   .navmenu .dropdown ul {
@@ -309,7 +309,7 @@ h3 {
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);/*menu color*/
+    color: var(--nav-color); /*menu color*/
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -330,7 +330,7 @@ h3 {
     padding: 10px 0;
     margin: 0;
     border-radius: 6px;
-    background-color: var(--nav-dropdown-hover-color);
+    background-color: var(--background-color);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -339,7 +339,9 @@ h3 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--background-color);/* font color mobile font menu*/
+    color: var(
+      --nav-dropdown-hover-color
+    ); /* font color mobile font menu*/
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
@@ -379,15 +381,13 @@ h3 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(
-      --nav-dropdown-background-color
-    ); /*Active Selected menu ex. portfolio*/
+    color: var(--nav-dropdown-background-color); /*Active Selected menu ex. portfolio*/
   }
 
   .navmenu .active i,
   .navmenu .active:focus i {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
+    background-color: var(--background-color);
+    color: var(--background-color);
     transform: rotate(180deg);
   }
 
@@ -413,7 +413,7 @@ h3 {
   }
 
   .mobile-nav-active {
-    overflow:hidden;
+    overflow: hidden;
   }
 
   .mobile-nav-active .mobile-nav-toggle {
