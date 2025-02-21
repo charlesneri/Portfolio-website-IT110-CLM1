@@ -1,4 +1,3 @@
-
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
@@ -66,8 +65,9 @@ a {
   text-decoration: none;
   transition: 0.3s;
 }
-.portfolio-content img.proj {
-  height: 270px;
+.certificates {
+  width: 350px;
+  height: 250px;
 }
 
 a:hover {
@@ -327,9 +327,7 @@ h3 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(
-      --nav-dropdown-hover-color
-    ); /* font color mobile font menu*/
+    color: var(--nav-dropdown-hover-color); /* font color mobile font menu*/
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
@@ -369,7 +367,9 @@ h3 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-background-color); /*Active Selected menu ex. portfolio*/
+    color: var(
+      --nav-dropdown-background-color
+    ); /*Active Selected menu ex. portfolio*/
   }
 
   .navmenu .active i,
@@ -836,7 +836,6 @@ section,
 .services .service-item:hover .icon i {
   color: var(--accent-color);
 }
-
 
 /*--------------------------------------------------------------
 # Portfolio Section
