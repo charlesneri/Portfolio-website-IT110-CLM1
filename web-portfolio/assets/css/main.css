@@ -454,11 +454,11 @@ h3 {
   margin: 0 0 30px 0;
 }
 
-.footer .social-links, #toggle-mode {
+.footer .social-links {
   margin: 0 0 30px 0;
 }
 
-.footer .social-links a, #toggle-mode {
+.footer .social-links a {
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -474,7 +474,7 @@ h3 {
   transition: 0.3s;
 }
 
-.footer .social-links a:hover,#toggle-mode:hover {
+.footer .social-links a:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
   text-decoration: none;
 }
@@ -691,7 +691,8 @@ section,
   z-index: 3;
 }
 
-.hero h2 { /*text size*/
+.hero h2 {
+  /*text size*/
   margin: 0;
   font-size: 50px;
   font-weight: 700;
@@ -724,6 +725,39 @@ section,
 .hero .social-links a:hover {
   color: var(--accent-color);
 }
+/*darkmode-lightmode
+#toggle-mode {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--default-color);
+  border-radius: 50px 50px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  
+}
+
+#toggle-mode:hover {
+  background: color-mix(
+    in srgb,
+    var(--nav-dropdown-hover-color),
+    transparent 20%
+  );
+}
+
+
+.icon {
+  font-size: 20px;
+}*/
+/* Center the button */
+/* Centering the button */
 
 @media (max-width: 768px) {
   .hero h2 {
@@ -751,7 +785,8 @@ section,
   z-index: 1;
 }
 
-.about .content h3 {/*about font*/
+.about .content h3 {
+  /*about font*/
   font-size: 1.2rem;
   font-weight: 300;
 }
