@@ -454,11 +454,11 @@ h3 {
   margin: 0 0 30px 0;
 }
 
-.footer .social-links {
+.footer .social-links, #toggle-mode {
   margin: 0 0 30px 0;
 }
 
-.footer .social-links a {
+.footer .social-links a, #toggle-mode {
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -474,7 +474,7 @@ h3 {
   transition: 0.3s;
 }
 
-.footer .social-links a:hover {
+.footer .social-links a:hover,#toggle-mode:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
   text-decoration: none;
 }
@@ -691,10 +691,11 @@ section,
   z-index: 3;
 }
 
-.hero h2 {
+.hero h2 { /*text size*/
   margin: 0;
-  font-size: 64px;
+  font-size: 50px;
   font-weight: 700;
+  color: var(--default-color);
 }
 
 .hero p {
@@ -750,9 +751,9 @@ section,
   z-index: 1;
 }
 
-.about .content h3 {
-  font-size: 1.75rem;
-  font-weight: 700;
+.about .content h3 {/*about font*/
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .about .content .fst-italic {
